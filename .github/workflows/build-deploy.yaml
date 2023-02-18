@@ -14,9 +14,9 @@ jobs:
         with:
           persist-credentials: false
           fetch-depth: 0
+      - run: rm -r ./docs
       - run: npm install
       - run: npm run build
-      - run: ls -als
       - run: git add -f ./docs
       - uses: actions-js/push@master
         with:
