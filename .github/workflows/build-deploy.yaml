@@ -19,7 +19,7 @@ jobs:
       - run: rm -r ./docs
       - run: npm install
       - run: ls -als
-      - run: ls -als ./docs
+
       - run: npm run build
       - run: ls -als
       - run: ls -als ./docs
