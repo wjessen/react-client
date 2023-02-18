@@ -3,13 +3,13 @@ import './App.css';
 
 function App() {
 
-  fetch('https://clownfish-app-4kruw.ondigitalocean.app/', {mode: 'no-cors'})
-  .then((response) => response.json()
-  .then((data) => console.log(data)));
-
+  fetch('https://clownfish-app-4kruw.ondigitalocean.app/')
+    .then(response => response.json())
+    .then(data => console.log(data));
+  console.log("Here")
   return (
     <div className="App">
-      <p>Here </p>
+      <p>Here2 </p>
     </div>
   );
 }
