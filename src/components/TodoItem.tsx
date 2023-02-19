@@ -34,9 +34,7 @@ function TodoItem(props: any) {
     if (isEditable) {
         return(
             <div>
-            <input onClick={handleClick}  onChange={handleChange} type="text" value={text}>
-            </input>
-
+                <input onClick={handleClick}  onChange={handleChange} type="text" value={text}></input>
             </div>
         )
     }
